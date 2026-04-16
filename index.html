@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>pixelworld</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="body">
+    <div id="mobile-error">
+      <h2>hey, boo!</h2>
+      <h4>
+        unfortunately, this isn't available for mobile or smaller screens :( hop
+        on ur laptop n check it out!
+      </h4>
+    </div>
+    <div id="welcome-page">
+      <div id="welcome-content">
+        <h1>welcome to Mehdi's pixel world! 💕</h1>
+        <p>
+          hi, boo! <3 <br />your lover, Ahlem, is waiting for you somewhere in this magical world.
+          <br />
+          <br />
+          <br />
+          <strong>objective:</strong> find your way through this world and reunite with Ahlem. <br />
+          <br />
+          good luck!
+        </p>
+        <button id="start-button">begin</button>
+      </div>
+    </div>
+    <div id="map-container">
+      <img id="map-img" src="img/map.png" />
+      <!-- <img id="character" src="img/char1.png" alt="Character" /> -->
+
+      <div id="character" alt="Character"></div>
+
+      <img id="character2" src="img/char2.png" alt="Character" />
+      <img
+        id="chest1"
+        class="chest l"
+        src="img/chest-l-closed.png"
+        alt="Character"
+      />
+      <img
+        id="chest2"
+        class="chest r"
+        src="img/chest-r-closed.png"
+        alt="Character"
+      />
+      <img
+        id="chest3"
+        class="chest r"
+        src="img/chest-r-closed.png"
+        alt="Character"
+      />
+    </div>
+    <div id="clue">
+      <img id="heart" src="img/heart.gif" />
+      <p>you found one heart!</p>
+      <button id="collect-heart">collect</button>
+    </div>
+    <div id="almost-final-popup">
+      <h3>hey, there!</h3>
+      <p>
+        you found me Mehdi! but, you need to collect 3 hearts, stored in treasure
+        chests across the map, in order to win the game. <br /><br />come back
+        to me when you've collected all 3.
+      </p>
+      <button id="close-almost">x</button>
+    </div>
+    <div id="final-popup">
+      <h1>success!!</h1>
+      <p>
+        mission accomplished boo! 🎮 <br /><br />u have braved the challenges,
+        collected 3 hearts, & reached the end.
+      </p>
+      <div>
+        <button id="yes" onclick="window.location.reload()">play again</button>
+        <button id="no-button" onmousemove="moveButton()">
+          actually, this game is bad...
+        </button>
+      </div>
+    </div>
+    <div id="heart-counter-box">
+      <img src="img/heart.gif" />
+      <p id="heart-counter"></p>
+    </div>
+    <img id="confetti" src="img/confetti.gif" />
+    <audio id="myAudio" loop>
+      <source src="audio/bg.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio>
+    <audio id="chestAudio">
+      <source src="audio/chest.wav" type="audio/wav" />
+      Your browser does not support the audio tag.
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
